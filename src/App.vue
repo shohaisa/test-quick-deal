@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Главная</router-link> |
+    <router-link :to="{ name: 'task.list' }">Список задач</router-link>
   </nav>
   <router-view />
 </template>
